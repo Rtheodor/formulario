@@ -1,16 +1,16 @@
 body{
     font-family: sans-serif;
     text-transform: uppercase;
-    background-color:#99c3cf;
     
+    
+    background-image: url(img/shutterstock_559799125-compressed.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:center;
 }
 
 p{
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-}
-
-form{
     text-align: center;
 }
 
@@ -25,9 +25,23 @@ form{
     
 }
 
+#descreva{
+    height:200px;
+    width: 500px;
+}
 
-
-
+.formato{
+    text-align: center;
+   
+}
+form{
+    
+    background-color: rgb(0, 255, 242);
+    height:800px;
+    width:800px;
+    opacity: 0.5;
+    
+}
 
 
 
