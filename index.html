@@ -1,40 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="style.css">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Meu formulario</title>
 </head>
+
 <body>
     <div class="container">
         <header>
             <h1 class="titleheader">Formulario</h1>
             <p>Valeu por ver meu formulario - chama no radim que é nozes</p>
-        
+
         </header>
     </div>
-    
-          
+
+
     <form>
         <div>
-          <label id="name">nome </label><br>
-          <input type="nome" class="formulario" placeholder="seu nome">
+            <label id="name">nome </label><br>
+            <input type="nome" class="formulario" placeholder="seu nome">
         </div>
         <div>
             <label id="email">E-mail </label><br>
-            <input type="email"  name="email" placeholder="seu email">
+            <input type="email" name="email" placeholder="seu email">
         </div>
         <div>
-            <label >sua idade </label><br>
-            <input type="number"  name="age" placeholder="sua idade">
+            <label>sua idade </label><br>
+            <input type="number" name="age" placeholder="sua idade">
         </div>
         <div>
-            <label >Senha</label><br>
-            <input type="password"name="password" placeholder="seu nome">
+            <label id="senha">Senha</label><br>
+            <input type="password" name="password" placeholder="seu nome">
         </div>
+
+        <div>
+            <p> Para quem indicaria o FreeCodCamp ?</p>
+            <select name="drop" class="dropdown">
+                <option value="Amigo"> Amigo </option>
+                <option value="Familia"> Familia </option>
+                <option value="Galera do discord"> Galera do discord </option>
+
+            </select>
+
+            <div>
+                <p> Aprendeu muita coisa com o FreeCodCamp ?</p>
+               
+                <input type="radio" id="sim" name="escolha" value="sim">
+                <label for="sim">Sim</label><br>
+               
+                <input type="radio" id="nao" name="escolha" value="nao">
+                <label for="css">Não</label><br>
+            </div>
+
+            <p> O que mais curtiu ate agora codando ?</p>
+            <select name="drop" class="dropdown">
+                <option value="raciocionio"> Raciocinio logico melhorou </option>
+                <option value="Sopa"> Compreender a sopa de litrinhas </option>
+                <option value="comunidade"> Fazer amigos (Comunidades) </option>
+
+            </select>
+
+            <div>
+                <p>Pretende se aprofundar em qual role?</p>
+                
+                <input type="checkbox" id="front" name="front" value="front-end">
+                <label for="front"> Front-end</label><br>
+                
+                <input type="checkbox" id="back" name="back" value="back-end">
+                <label for="back"> Back-end</label><br>
+                
+                <input type="checkbox" id="duck" name="duck" value="duck-full">
+                <label for="duck"> Full-stack </label><br>
+            </div>
+
+            <div>
+                <p>O que achou de codar ate agora? </p>
+                <textarea id="descreva" placeholder="Digite aqui por favor!"></textarea>
+            </div>
+
+            <div><button type="submit" id="submit" class="envio"> Enviar </button></div>
+            
     </form>
 </body>
+
 </html>

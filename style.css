@@ -1,6 +1,7 @@
 body{
     font-family: sans-serif;
     text-transform: uppercase;
+    background-color:#99c3cf;
     
 }
 
@@ -23,6 +24,8 @@ form{
     text-align: center;
     
 }
+
+
 
 
 
