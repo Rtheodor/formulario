@@ -14,33 +14,34 @@
     <div class="container">
         <header>
             <h1 class="titleheader">Formulario</h1>
-            <p>Valeu por ver meu formulario - chama no radim que é nozes</p>
+            <h2>Valeu por ver meu formulario - chama no radim que é nozes</h2>
 
         </header>
     </div>
 
 
-    <form class="formato">
-        <div>
-            <label id="name">nome </label><br>
-            <input type="nome" placeholder="seu nome">
+    <form >
+        <div class="corletra">
+            <label for="name">nome </label><br>
+            <input type="text" placeholder="seu nome" id="name" required >
         </div>
-        <div>
-            <label id="email">E-mail </label><br>
-            <input type="email" name="email" placeholder="seu email">
+        <div class="corletra" >
+            <label for="email" >E-mail </label><br>
+            <input type="email" name="email"  placeholder="seu email" id="email" riquired>
         </div>
-        <div>
-            <label>sua idade </label><br>
-            <input type="number" name="age" placeholder="sua idade">
+        <div class="corletra">
+            <label for="idade">sua idade </label><br>
+            <input type="number" name="age" placeholder="sua idade" id="idade" riquired>
         </div>
-        <div>
-            <label id="senha">Senha</label><br>
-            <input type="password" name="password" placeholder="seu nome">
+        <div class="corletra">
+            <label for="senha">Senha</label><br>
+            <input type="password" name="password" placeholder="senha" id="senha" riquired>
         </div>
 
         <div>
             <p> Para quem indicaria o FreeCodCamp ?</p>
             <select name="drop" class="dropdown">
+                <option selected disabled value="">Selecione</option>
                 <option value="Amigo"> Amigo </option>
                 <option value="Familia"> Familia </option>
                 <option value="Galera do discord"> Galera do discord </option>
@@ -51,14 +52,15 @@
                 <p> Aprendeu muita coisa com o FreeCodCamp ?</p>
                
                 <input type="radio" id="sim" name="escolha" value="sim">
-                <label for="sim">Sim</label><br>
+                <label class="selecionar" for="sim">Sim</label><br>
                
                 <input type="radio" id="nao" name="escolha" value="nao">
-                <label for="css">Não</label><br>
+                <label class="selecionar" for="css">Não</label><br>
             </div>
 
             <p> O que mais curtiu ate agora codando ?</p>
             <select name="drop" class="dropdown">
+                <option selected disabled value="">Selecione</option>
                 <option value="raciocionio"> Raciocinio logico melhorou </option>
                 <option value="Sopa"> Compreender a sopa de litrinhas </option>
                 <option value="comunidade"> Fazer amigos (Comunidades) </option>
@@ -69,21 +71,21 @@
                 <p>Pretende se aprofundar em qual role?</p>
                 
                 <input type="checkbox" id="front" name="front" value="front-end">
-                <label for="front"> Front-end</label><br>
+                <label class="selecionar"for="front"> Front-end</label>
                 
                 <input type="checkbox" id="back" name="back" value="back-end">
-                <label for="back"> Back-end</label><br>
+                <label class="selecionar"for="back"> Back-end</label>
                 
                 <input type="checkbox" id="duck" name="duck" value="duck-full">
-                <label for="duck"> Full-stack </label><br>
+                <label class="selecionar"for="duck"> Full-stack </label>
             </div>
 
             <div>
                 <p>O que achou de codar ate agora? </p>
                 <textarea id="descreva" placeholder="Digite aqui por favor!"></textarea>
             </div>
-
-            <div><button type="submit" id="submit" class="envio"> Enviar </button></div>
+            <br>
+            <div><button class="botao" type="submit" id="submit" class="envio"> Enviar </button></div>
             
     </form>
 </body>
